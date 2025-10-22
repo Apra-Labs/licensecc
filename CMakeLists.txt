@@ -29,6 +29,9 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake/")
 
+# Enable position-independent code for all targets
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 #find lccgen executable or build it.
 find_package(lccgen REQUIRED) 
 
