@@ -33,6 +33,13 @@ install/*
 projects/*
 !projects/.gitkeep
 
+# Allow DEFAULT project public headers (for development/testing)
+!projects/DEFAULT/
+!projects/DEFAULT/include/
+!projects/DEFAULT/include/licensecc/
+!projects/DEFAULT/include/licensecc/DEFAULT/
+!projects/DEFAULT/include/licensecc/DEFAULT/*.h
+
 **/CMakeCache.txt
 **/CMakeFiles
 /CMakeSettings.json
@@ -41,3 +48,4 @@ projects/*
 /.pydevproject
 vcpkg_installed/
 vcpkg_installed
+build*
